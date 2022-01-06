@@ -238,7 +238,7 @@
                 
               
 
-              <time title="Created: 2019-10-15 13:31:38" itemprop="dateCreated datePublished" datetime="2019-10-15T13:31:38-07:00">2019-10-15</time>
+              <time title="Created: 2019-10-15 16:31:38" itemprop="dateCreated datePublished" datetime="2019-10-15T16:31:38-04:00">2019-10-15</time>
             </span>
           
             
@@ -249,7 +249,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-21 19:24:26" itemprop="dateModified" datetime="2019-11-21T19:24:26-08:00">2019-11-21</time>
+                <time title="Modified: 2022-01-06 13:30:19" itemprop="dateModified" datetime="2022-01-06T13:30:19-05:00">2022-01-06</time>
               </span>
             
           
@@ -265,21 +265,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><font size="3"> I am currently a master’s student in statistics department at University of California, Davis. I got my degree of Bachelor of Science in Mathematics and Applied Mathematics from East China Normal University. I currently work on neuroimaging data analysis, aiming to extract neurons from in-vivo calcium imaging data by exploring efficient statistical models and algorithms. In the next stage of study, I would like to broaden my interests to some downstream analysis such as analyzing the functional connectivity by using graphical models, and applications of statistical methods in genomics. </font></p>
-<a href="/2019/10/15/CV/CV_Phd_WenjiaWangV4.pdf" title="My CV">My CV</a>
+          <p><font size="4">  I am a Ph.D. candidate in biostatistics at the University of Pittsburgh, supervised by Dr. George Tseng. I got my Master Degree of Science in Statistics from the University of California, Davis, and Bachelor Degree of Science in Mathematics and Applied Mathematics from East China Normal University. Currently, I am mainly working on the fast p-value computation of multiple hypothesis testing at extremely stringent significance level, which is generally required in meta data analysis and GWAS studies. Additionally, I am collaborating with biological and clinical labs, and applying statistical methods to wide areas such as metabolism and genomics. My research interests focus on analyses of various high-throughput omics experimental data (e.g. micro-array based, sequencing based or mass spectrometry) for candidate marker detection, disease subtype discovery, machine learning, pathway knowledge learning and network analysis to improve precision medicine and human health. </font></p>
+<a href="/2019/10/15/CV/CV_intern_WenjiaWang.pdf" title="My CV">My CV</a>
 
-<h2 id="Calcium-Imaging-Data"><a href="#Calcium-Imaging-Data" class="headerlink" title="Calcium Imaging Data"></a>Calcium Imaging Data</h2><p><font size="3"> Calcium imaging is a popular tool to monitor in vivo large neural populations over a long period with single neuron and single spike resolution. Before any downstream analysis, the recorded film needs to be pre-processed to extract the location and activity of the neurons and processes in the observed field of view. Generally, the pipelines are motion correction, source extraction, and spike inference. </font></p>
-<iframe width="215" height="100" src="https://www.youtube.com/embed/2aunYIDApHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="Multiple-hypothesis-tests-in-meta-analysis"><a href="#Multiple-hypothesis-tests-in-meta-analysis" class="headerlink" title="Multiple hypothesis tests in meta analysis"></a>Multiple hypothesis tests in meta analysis</h2><p><font size="2"> The research focuses on two methods of combining individual p-values for multiple hypothesis tests: Higher Criticism (HC) and Berk-Jones (BJ), which were proved asymptotically powerful for detecting weak and sparse signals. In literature about revealing the null distribution of HC and BJ, the significant limitations lie in numerical instability and inflexibility by analytic computation, and failure to recover the tail distribution by naive sampling methods. The research proposed the cross-entropy based importance sampling method with appropriate importance density, superior to the existing naive sampling methods in computing the right tail, and overcoming the inflexibility of analytic methods. By constructing the quantile-probability curves for HC and BJ of various domains and dimensions, a much faster approach for vectorizing computation of p-values given a huge number of group tests is developed. </font></p>
+<h2 id="Long-read-sequencing-data"><a href="#Long-read-sequencing-data" class="headerlink" title="Long-read sequencing data"></a>Long-read sequencing data</h2><p><font size="2"> The objective is to develop a pipeline for long-read sequencing data which is often generated by PacBio, Oxford Nanopore or LoopSeq techniques. The pipline can be used to detect the fusion transcripts, and mutations at isoform level. It can annotate long reads to isoform instead of gene level. Futhermore, based on the identified isoforms and fusion transcripts, it is possible to predict the open reading frame, and subsequently predict the proteins the reads encode. Based on the more specific annotations and predictions, some downstream analysis such as functional analysis will be easier. </font></p>
+<div style="width:60%;margin:auto"> <img src="/2019/10/15/CV/pipeline.jpg"> </div>
 
-<p><font size="3"> The video is generated by converting the 3024 of 512 x 512 images from calcium imaging dataset provided by Simon Peron, Nicholas Sofroniew, &amp; Karel Svoboda/Janelia Research Campus. The calcium imaging data is motion corrected, recording both somatic and dendritic compartments of 330 neurons. </font></p>
-<h2 id="Performance-of-SCALPEL"><a href="#Performance-of-SCALPEL" class="headerlink" title="Performance of SCALPEL"></a>Performance of SCALPEL</h2><p><font size="3"> Apply SCALPEL to recover the neuronal signals from the field of view (except “minClusterSize”, default values were used for all of the tuning parameters), as the right figure shows. Compared to the ground truth (left figure, based on a separate anatomical nuclear marker and/or hand annotations), there are 403 elements retained after refining the dictionary via clustering and none of them is zeroed out by grouped lasso regularizer. It is obvious that many small elements consisting of noise pixels are mis-construed even small clusters have already been filtered out. </font></p>
-<img src="/2019/10/15/CV/trueA_minCluster5.pdf">
-
-<p><font size="3"> In particular, when focusing on the left bottom of FOV, SCALPEL is less effective. At the left corner, the data structure tends to be more complicated (left: raw fame; median: soma locations; right: estimates), including dendritic compartments and stronger neuropil contamination. </font></p>
-<img src="/2019/10/15/CV/sub_comp.jpg">
-
-<p><font size="3"> By filtering out some small clusters (cluster size &lt; 5), 135 elements are removed. Obviously, some true soma are missed as well. SCALPEL may be less effective to deal with neuropil corruption and not suitable to extract dendrites. The default values of some tuning parameters seem not reliable. Simulation experiments need to be conducted for verification. </font></p>
-<img src="/2019/10/15/CV/subtruth_temp_minCluster5.pdf">
+<h2 id="Calcium-imaging-data"><a href="#Calcium-imaging-data" class="headerlink" title="Calcium imaging data"></a>Calcium imaging data</h2><p><font size="2"> The research aims to extract neurons from in-vivo calcium imaging data by exploring efficient statistical models and algorithms. Calcium imaging is a popular tool to monitor in vivo large neural populations over a long period with single neuron and single spike resolution. Before any downstream analysis, the recorded film needs to be pre-processed to extract the location and activity of the neurons and processes in the observed field of view. Generally, the pipelines are motion correction, source extraction, and spike inference. The video below is generated by converting the 3024 of 512 x 512 images from calcium imaging dataset provided by Simon Peron, Nicholas Sofroniew, &amp; Karel Svoboda/Janelia Research Campus. The calcium imaging data is motion corrected, recording both somatic and dendritic compartments of 330 neurons.</font></p>
+<iframe width="150" height="70" src="https://www.youtube.com/embed/2aunYIDApHc" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         
       
@@ -369,7 +363,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
