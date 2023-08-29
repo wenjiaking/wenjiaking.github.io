@@ -55,19 +55,17 @@
   };
 </script>
 
-  <meta name="description" content="Fast p-value calculation for HC and BJ tests In genome-wide association studies (GWASs), scientists commonly group multiple SNVs together based on their chromosomal site, then test the association bet">
+  <meta name="description" content="My research interests include Statistical Computing, Meta-Analysis of Heterogeneous Signals, High-Dimention Clustering, and Statistical Learning with applications to Statistical Genomics and Genetics.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Research">
 <meta property="og:url" content="http://yoursite.com/research/index.html">
 <meta property="og:site_name" content="Wenjia Wang">
-<meta property="og:description" content="Fast p-value calculation for HC and BJ tests In genome-wide association studies (GWASs), scientists commonly group multiple SNVs together based on their chromosomal site, then test the association bet">
+<meta property="og:description" content="My research interests include Statistical Computing, Meta-Analysis of Heterogeneous Signals, High-Dimention Clustering, and Statistical Learning with applications to Statistical Genomics and Genetics.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/research/Prediction.anchor.pdf">
-<meta property="og:updated_time" content="2022-01-06T19:42:36.364Z">
+<meta property="og:updated_time" content="2023-08-29T03:28:27.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Research">
-<meta name="twitter:description" content="Fast p-value calculation for HC and BJ tests In genome-wide association studies (GWASs), scientists commonly group multiple SNVs together based on their chromosomal site, then test the association bet">
-<meta name="twitter:image" content="http://yoursite.com/research/Prediction.anchor.pdf">
+<meta name="twitter:description" content="My research interests include Statistical Computing, Meta-Analysis of Heterogeneous Signals, High-Dimention Clustering, and Statistical Learning with applications to Statistical Genomics and Genetics.">
   <link rel="canonical" href="http://yoursite.com/research/">
 
 
@@ -247,14 +245,51 @@
       
       
       <div class="post-body">
-          <h2 id="Fast-p-value-calculation-for-HC-and-BJ-tests"><a href="#Fast-p-value-calculation-for-HC-and-BJ-tests" class="headerlink" title="Fast p-value calculation for HC and BJ tests"></a>Fast p-value calculation for HC and BJ tests</h2><p><font size="2"> In genome-wide association studies (GWASs), scientists commonly group multiple SNVs together based on their chromosomal site, then test the association between each SNV-set and phenotype one at a time. This results in tens of thousands of set tests and consequently more stringent type I error control for each test. Besides, only a small proportion of SNVs is expected to be phenotype-associated in each SNV-set. Solving this problem requires not only a powerful multiple hypothesis test for the sparse signal detection, but also a fast and accurate p-value or threshold computation method at stringent significance level.</font></p>
-<p><font size="2"> Higher Criticism (HC) and Berk-Jones (BJ) are two typical multiple hypothesis test statistics, and generally used to detect weak and sparse signals since they were proved asymptotically powerful. However, there is no simple formula of the null distribution, and current literature has limitations in computing the null distribution, such as numerical instability, inflexibility and failure to recover the whole distribution. The contributions of the research include proposing the cross-entropy based importance sampling with appropriate importance density to recover the tail distribution for HC and BJ of various supremum domains, modifying the analytic methods to overcome the numerical instability and inflexibility w.r.t. supremum domains, and finally constructing the quantile-probability libraries and smooth curves to reveal the whole null distribution for HC and BJ of different supremum domains over a wide range of dimensions so that it can be much faster for vectorizing computation of p-values given a huge number of observed statistics, or finding the thresholds given a family-wise significance level. <a href="https://wenjiaking.github.io/p_valueComputationENAR.pdf" target="_blank" rel="noopener">[Paper Manuscript]</a></font></p>
-<h2 id="Pipeline-for-long-read-sequencing-data"><a href="#Pipeline-for-long-read-sequencing-data" class="headerlink" title="Pipeline for long-read sequencing data"></a>Pipeline for long-read sequencing data</h2><p><font size="2"> The pipeline is developed based on R and some existing tools such as the aligner MINIMAP2. Though immature it is, the pipeline can identify whether the long read sequence is a known/normal isoform and whether it is a fusion or not. In addition, it provides other information including the chromosome position, strand, gene, and fusion point if it is a fusion, etc. </font></p>
-<p><font size="2"> Currently, the pipeline works well in our simulation as the figures show. The data is simulated by PBSIM tool, including six types of novel transcript and the normal transcript from 1000 randomly selected genes, followed by mixing each novel type of reads with normal reads to obtain six data sets. Apply the developed pipeline and evaluate its ability of detecting novel reads based on the ground truth. In addition, get some insights in the sensitivity to anchor length by tolerant some error bps. </font><br><img src="/research/Prediction.anchor.pdf" alt="alt"></p>
-<p><font size="2"> Next stage is to evaluate the pipeline on fusion detection, analyze its sensitivity to anchor length, improve it by combining multiple aligners (e.g. STARLong), finalize the pipeline and apply it to our real long sequence cancer data. </font></p>
-<h2 id="Neurons-extraction-from-in-vivo-calcium-imaging-data"><a href="#Neurons-extraction-from-in-vivo-calcium-imaging-data" class="headerlink" title="Neurons extraction from in-vivo calcium imaging data"></a>Neurons extraction from in-vivo calcium imaging data</h2><p><font size="2"> Calcium imaging is an important technique for monitoring the activity of a large number of neurons simultaneously. Repeatedly scanning a single image plane yields a time series of 2D images. In fact, the characteristics of the films are different across neuronal compartments recorded (eg. cell body, axonal boutons, dendritic compartments, and spines), field of view (FOV), spatial and temporal resolution. In addition, any method of analyzing calcium imaging data must be tailored to, not only fitting the features of images, but also meeting the demands of the specific scientific application. </font></p>
-<p><font size="2"> Though a variety of unsupervised learning basis methods have been proposed, the difficulties in efficiently handling out-of-focus or neuropil contamination due to low z-resolution still exist. Besides, as the studying synaptic transmission and dendritic integration in vivo springs up, statisticians are expected to propose efficient approaches to extract the activities of dendritic spines or even axonal boutons. However, only few papers focus on these issues now. </font></p>
-<p><font size="2"> The research purpose is to develop approaches to simultaneously identify neurons and estimate calcium concentrations from in-vivo calcium imaging data corrupted by complex background based on the existing methods, and try to make some improvements in dealing dendrites imaging data. (Details: <a href="https://wenjiaking.github.io/Review.pdf" target="_blank" rel="noopener">[Review Manuscript]</a> and <a href="https://github.com/wenjiaking/SCALPEL_Simulation" target="_blank" rel="noopener">[Code]</a>)</font></p>
+          <p>My research interests include Statistical Computing, Meta-Analysis of Heterogeneous Signals, High-Dimention Clustering, and Statistical Learning with applications to Statistical Genomics and Genetics.</p>
+<h1 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h1><h2 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h2><ol>
+    <li><strong>Wenjia Wang</strong>, Yusi Fang, Chung Chang, George Tseng (2023+). “Accurate and ultra-efficient p-value calculation for higher criticism tests.” <em>Under revision in JCGS</em>.</li>
+    <li>Yujia Li, Peng Liu, <strong>Wenjia Wang</strong>, Wei Zong, Yusi Fang, Zhao Ren, Lu Tang, George C. Tseng (2023+). “Outcome-guided Disease Subtyping by Generative Model and Weighted Joint Likelihood in Transcriptomic Applications.” <em>Under revision in AOAS</em>.</li>
+
+</ol>
+
+<h2 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h2><ol>
+    <li>Liu Silvia, Yu Yan-Ping, Ren Bao-Guo, Ben-Yehezkel Tuval, Obert Caroline, Smith Mat, <strong>Wang Wenjia</strong>, Ostrowska Alina, Soto-Gutierrez Alejandro, Luo Jian-Hua (2023). "Long-read single-cell sequencing reveals expressions of hypermutation clusters of isoforms in human liver cancer cells." <em>Accepted by eLife</em>.</li>
+    <li>Liu Silvia, <strong>Wenjia Wang</strong> (2023+). “Utility analyses of AVITI sequencing platforms.” <em>Submitted</em>.</li>
+    <li>Dong Zhou, Liu Silvia, <strong>Wenjia Wang</strong> (2023+). “Proteomes characterization of liver-kidney comorbidity after microbial sepsis.” <em>Submitted</em>.</li>
+
+</ol>
+
+<h1 id="Manuscripts-in-Prepartion"><a href="#Manuscripts-in-Prepartion" class="headerlink" title="Manuscripts in Prepartion"></a>Manuscripts in Prepartion</h1><ol>
+    <li><strong>Wenjia Wang</strong>, Yusi Fang, Chung Chang, George Tseng (2023+). “Combining p-values: historical development, recent advances and future opportunities.” <em>manuscript in preparation</em>.</li>
+
+</ol>
+
+
+<h1 id="Paper-Review"><a href="#Paper-Review" class="headerlink" title="Paper Review"></a>Paper Review</h1><ol>
+    <li>The Journal of Emerging Investigators</li>
+    <li>PLOS Digital Health</li>
+
+</ol>
+
+<h1 id="Selected-Courses-Taken"><a href="#Selected-Courses-Taken" class="headerlink" title="Selected Courses Taken"></a>Selected Courses Taken</h1><ul>
+    <li>BIOST2054: Survival Analysis, Spring 2022</li>
+    <li>ML10707: Advanced Deep Learning, Spring 2022 (Carnegie Mellon University)</li>
+    <li>ML10301/601: Introduction to Machine Learning, Fall 2021 (Carnegie Mellon University)</li>
+    <li>STAT2221: Advanced Applied Multivariate Analysis, Fall 2021</li>
+    <li>BIOST2086: Applied Mixed Models Analysis, Spring 2021</li>
+    <li>STA243: Computational Statistics, Spring 2019 (University of California, Davis)</li>
+    <li>STA138: Analysis of Categorical Data, Fall 2018 (University of California, Davis)</li>
+
+</ul>
+
+<h1 id="Awards"><a href="#Awards" class="headerlink" title="Awards"></a>Awards</h1><ul>
+    <li>ASA Sections on Computing and Graphics Student Paper Award, 2023</li>
+    <li>Excellent Graduate of East China Normal University, 2017</li>
+    <li>Scholarship of Academic Excellence, 2016, East China Normal University</li>
+    <li>Scholarship of Academic Excellence, 2015, East China Normal University</li>
+    <li>Scholarship of Academic Excellence, 2014, East China Normal University</li>
+    <li>Second Prize in National Olympic Biology Competition,2012</li>
+</ul>
 
         
       </div>
@@ -301,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fast-p-value-calculation-for-HC-and-BJ-tests"><span class="nav-number">1.</span> <span class="nav-text">Fast p-value calculation for HC and BJ tests</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pipeline-for-long-read-sequencing-data"><span class="nav-number">2.</span> <span class="nav-text">Pipeline for long-read sequencing data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Neurons-extraction-from-in-vivo-calcium-imaging-data"><span class="nav-number">3.</span> <span class="nav-text">Neurons extraction from in-vivo calcium imaging data</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Publications"><span class="nav-number">1.</span> <span class="nav-text">Publications</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Methodology"><span class="nav-number">1.1.</span> <span class="nav-text">Methodology</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Application"><span class="nav-number">1.2.</span> <span class="nav-text">Application</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Manuscripts-in-Prepartion"><span class="nav-number">2.</span> <span class="nav-text">Manuscripts in Prepartion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Paper-Review"><span class="nav-number">3.</span> <span class="nav-text">Paper Review</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Selected-Courses-Taken"><span class="nav-number">4.</span> <span class="nav-text">Selected Courses Taken</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Awards"><span class="nav-number">5.</span> <span class="nav-text">Awards</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -343,7 +378,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="I am a Ph.D. candidate in biostatistics at the University of Pittsburgh, supervised by Dr. George Tseng. I got my Master Degree of Science in Statistics from the University of California, Davis, and">
+  <meta name="description" content="I am a Ph.D. candidate in biostatistics at School of Public Health, University of Pittsburgh under the guidance of Dr. George C. Tseng. During my PhD studies, I am also a graduate student researche">
 <meta property="og:type" content="article">
 <meta property="og:title" content="About me">
 <meta property="og:url" content="http://yoursite.com/2019/10/15/CV/index.html">
 <meta property="og:site_name" content="Wenjia Wang">
-<meta property="og:description" content="I am a Ph.D. candidate in biostatistics at the University of Pittsburgh, supervised by Dr. George Tseng. I got my Master Degree of Science in Statistics from the University of California, Davis, and">
+<meta property="og:description" content="I am a Ph.D. candidate in biostatistics at School of Public Health, University of Pittsburgh under the guidance of Dr. George C. Tseng. During my PhD studies, I am also a graduate student researche">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/15/CV/pipeline.jpg">
-<meta property="og:updated_time" content="2022-01-06T18:30:19.757Z">
+<meta property="og:image" content="http://yoursite.com/research/bio.jpg">
+<meta property="og:updated_time" content="2023-08-29T02:13:15.106Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About me">
-<meta name="twitter:description" content="I am a Ph.D. candidate in biostatistics at the University of Pittsburgh, supervised by Dr. George Tseng. I got my Master Degree of Science in Statistics from the University of California, Davis, and">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/15/CV/pipeline.jpg">
+<meta name="twitter:description" content="I am a Ph.D. candidate in biostatistics at School of Public Health, University of Pittsburgh under the guidance of Dr. George C. Tseng. During my PhD studies, I am also a graduate student researche">
+<meta name="twitter:image" content="http://yoursite.com/research/bio.jpg">
   <link rel="canonical" href="http://yoursite.com/2019/10/15/CV/">
 
 
@@ -256,7 +256,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-06 13:30:19" itemprop="dateModified" datetime="2022-01-06T13:30:19-05:00">2022-01-06</time>
+                <time title="Modified: 2023-08-28 22:13:15" itemprop="dateModified" datetime="2023-08-28T22:13:15-04:00">2023-08-28</time>
               </span>
             
           
@@ -272,15 +272,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><font size="4">  I am a Ph.D. candidate in biostatistics at the University of Pittsburgh, supervised by Dr. George Tseng. I got my Master Degree of Science in Statistics from the University of California, Davis, and Bachelor Degree of Science in Mathematics and Applied Mathematics from East China Normal University. Currently, I am mainly working on the fast p-value computation of multiple hypothesis testing at extremely stringent significance level, which is generally required in meta data analysis and GWAS studies. Additionally, I am collaborating with biological and clinical labs, and applying statistical methods to wide areas such as metabolism and genomics. My research interests focus on analyses of various high-throughput omics experimental data (e.g. micro-array based, sequencing based or mass spectrometry) for candidate marker detection, disease subtype discovery, machine learning, pathway knowledge learning and network analysis to improve precision medicine and human health. </font></p>
-<a href="/2019/10/15/CV/CV_intern_WenjiaWang.pdf" title="My CV">My CV</a>
+        <p><img src="/research/bio.jpg" alt="alt"></p>
+<p><font size="4">  I am a Ph.D. candidate in biostatistics at <a href="https://www.sph.pitt.edu/" target="_blank" rel="noopener">School of Public Health</a>, University of Pittsburgh under the guidance of <a href="https://sites.pitt.edu/~ctseng/" target="_blank" rel="noopener">Dr. George C. Tseng</a>. During my PhD studies, I am also a graduate student researcher under the guidance of <a href="https://www.konnikovalab.com/" target="_blank" rel="noopener">Dr. Liza Konnikova</a> at Yale School of Medicine and and <a href="https://sites.pitt.edu/~shl96/" target="_blank" rel="noopener">Dr. Silvia Liu</a> in School of Medicine, University of Pittsburgh. Prior to attending the PhD program, I received my Master Degree of Science in Statistics from <a href="https://statistics.ucdavis.edu/" target="_blank" rel="noopener">Department of Statistics</a>, University of California, Davis, and Bachelor Degree of Science in Mathematics and Applied Mathematics from <a href="https://math.ecnu.edu.cn/" target="_blank" rel="noopener">School of Mathematical Sciences</a>, East China Normal University. </font></p>
+<p><font size="4"> My research interest lies in developing and applying statistical methods to solve real biomedical problems. My methodological research spans statistical computing, meta-analysis of heterogeneous signals, large-scale inference, and high-dimention clustering for omics study. On the application side, I am collaborating with biological and clinical labs in wide fields such as metabolism and genomics, to analyze data with advanced statistical methods for candidate marker detection, disease subtype discovery, pathway knowledge learning and network analysis in improving precision medicine and human health. </font></p>
+<br>
 
-<h2 id="Multiple-hypothesis-tests-in-meta-analysis"><a href="#Multiple-hypothesis-tests-in-meta-analysis" class="headerlink" title="Multiple hypothesis tests in meta analysis"></a>Multiple hypothesis tests in meta analysis</h2><p><font size="2"> The research focuses on two methods of combining individual p-values for multiple hypothesis tests: Higher Criticism (HC) and Berk-Jones (BJ), which were proved asymptotically powerful for detecting weak and sparse signals. In literature about revealing the null distribution of HC and BJ, the significant limitations lie in numerical instability and inflexibility by analytic computation, and failure to recover the tail distribution by naive sampling methods. The research proposed the cross-entropy based importance sampling method with appropriate importance density, superior to the existing naive sampling methods in computing the right tail, and overcoming the inflexibility of analytic methods. By constructing the quantile-probability curves for HC and BJ of various domains and dimensions, a much faster approach for vectorizing computation of p-values given a huge number of group tests is developed. </font></p>
-<h2 id="Long-read-sequencing-data"><a href="#Long-read-sequencing-data" class="headerlink" title="Long-read sequencing data"></a>Long-read sequencing data</h2><p><font size="2"> The objective is to develop a pipeline for long-read sequencing data which is often generated by PacBio, Oxford Nanopore or LoopSeq techniques. The pipline can be used to detect the fusion transcripts, and mutations at isoform level. It can annotate long reads to isoform instead of gene level. Futhermore, based on the identified isoforms and fusion transcripts, it is possible to predict the open reading frame, and subsequently predict the proteins the reads encode. Based on the more specific annotations and predictions, some downstream analysis such as functional analysis will be easier. </font></p>
-<div style="width:60%;margin:auto"> <img src="/2019/10/15/CV/pipeline.jpg"> </div>
-
-<h2 id="Calcium-imaging-data"><a href="#Calcium-imaging-data" class="headerlink" title="Calcium imaging data"></a>Calcium imaging data</h2><p><font size="2"> The research aims to extract neurons from in-vivo calcium imaging data by exploring efficient statistical models and algorithms. Calcium imaging is a popular tool to monitor in vivo large neural populations over a long period with single neuron and single spike resolution. Before any downstream analysis, the recorded film needs to be pre-processed to extract the location and activity of the neurons and processes in the observed field of view. Generally, the pipelines are motion correction, source extraction, and spike inference. The video below is generated by converting the 3024 of 512 x 512 images from calcium imaging dataset provided by Simon Peron, Nicholas Sofroniew, &amp; Karel Svoboda/Janelia Research Campus. The calcium imaging data is motion corrected, recording both somatic and dendritic compartments of 330 neurons.</font></p>
-<iframe width="150" height="70" src="https://www.youtube.com/embed/2aunYIDApHc" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>My CV is available <a href="/2019/10/15/CV/CV_intern_WenjiaWang.pdf" title="here">here</a></p>
 
     </div>
 
@@ -335,8 +332,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Multiple-hypothesis-tests-in-meta-analysis"><span class="nav-number">1.</span> <span class="nav-text">Multiple hypothesis tests in meta analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Long-read-sequencing-data"><span class="nav-number">2.</span> <span class="nav-text">Long-read sequencing data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calcium-imaging-data"><span class="nav-number">3.</span> <span class="nav-text">Calcium imaging data</span></a></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
@@ -377,7 +372,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
